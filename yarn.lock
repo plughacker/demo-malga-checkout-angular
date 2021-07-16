@@ -1263,18 +1263,18 @@
     node-gyp "^7.1.0"
     read-package-json-fast "^2.0.1"
 
-"@plug-checkout/angular@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@plug-checkout/angular/-/angular-0.0.3.tgz#822ac20853884f9ab85b427f04e1379db452cf02"
-  integrity sha512-3WDS16J5xWpMSuRxc1wPpCiYUwLqcM/I5wSm/qtszYW0YRvjO0tzSQ8EQgWE3Y30/q6jkTlzigQd2FZT3KDRiQ==
+"@plug-checkout/angular@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@plug-checkout/angular/-/angular-0.0.4.tgz#750b131b8b2f5d11ccce6346439e568c6b61a826"
+  integrity sha512-mA3mc682mjAmihplU66INxpGhlayKlZCzXlJTeEE0H4nuq8xHym4qo7JKD9+FCXV7eId/4nvSVNNM0ojwyTu0A==
   dependencies:
-    "@plug-checkout/core" "0.0.3"
+    "@plug-checkout/core" "0.0.4"
     tslib "^1.9.3"
 
-"@plug-checkout/core@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@plug-checkout/core/-/core-0.0.3.tgz#457a985a7831e5c1a6b9cbaed55dfa04d0192870"
-  integrity sha512-vKKvSXXDQtiG3oKYms0lSpwvRNtoOKjjAaolfq/wOP3KNYdI/J0f4ABDDtTMxYla/AZbNCzA9aXGuL9AAfb8vw==
+"@plug-checkout/core@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@plug-checkout/core/-/core-0.0.4.tgz#ab0121323a8c981647539921263db6ae66429b47"
+  integrity sha512-IYQ7pG1AJfN+PCmwxCoPQSQjW4zWtA2ZmTEn+KMdxuesvMlFhO+r/P45rJZ8ODYJrgrvivJa/3s7+EdeaN/toQ==
   dependencies:
     axios "^0.21.1"
     inputmask "^5.0.6"
