@@ -4,10 +4,9 @@
     publicKey="<YOUR_PUBLIC_KEY>"
     clientId="<YOUR_CLIENT_ID>"
     merchantId="<YOUR_MERCHANT_ID>"
-    statementDescriptor="#1 Demonstration Plug Checkout"
-    amount="100"
-    [installmentsConfig]="installmentsConfig"
-    [customFormStyleClasses]="customFormStyleClasses"
+    [paymentMethods]="paymentMethods"
+    [transactionConfig]="transactionConfig"
+    [dialogConfig]="dialogConfig"
     (paymentSuccess)="handlePaymentSuccess"
     (paymentFailed)="handlePaymentFailed"
   >

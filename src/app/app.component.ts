@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 import {
-  PlugCheckoutOneShotSuccess,
-  PlugCheckoutOneShotError,
+  PlugCheckoutTransactionSuccessEvent,
+  PlugCheckoutTransactionErrorEvent,
 } from './app.types';
 
 @Component({
@@ -11,14 +11,56 @@ import {
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  installmentsConfig = { show: true, quantity: 2 };
-  customFormStyleClasses = { submitButton: 'custom-submit-button' };
+  paymentMethods = {
+    pix: {
+      expiresIn: 3600,
+    },
+    credit: {
+      installments: {
+        quantity: 1,
+        show: true,
+      },
+      showCreditCard: true,
+    },
+    boleto: {
+      expiresDate: '2022-12-31',
+      instructions: 'Instruções para pagamento do boleto',
+      interest: {
+        days: 1,
+        amount: 100,
+      },
+      fine: {
+        days: 2,
+        amount: 200,
+      },
+    },
+  };
 
-  handlePaymentSuccess(data: PlugCheckoutOneShotSuccess) {
+  transactionConfig = {
+    statementDescriptor: '#1 Demonstration Plug Checkout',
+    amount: 100,
+    description: '',
+    orderId: '',
+    customerId: '<CUSTOMER_ID>',
+    currency: 'BRL',
+    capture: false,
+  };
+
+  dialogConfig = {
+    show: true,
+    actionButtonLabel: 'Continuar',
+    errorActionButtonLabel: 'Tentar novamente',
+    successActionButtonLabel: 'Continuar',
+    successRedirectUrl: 'https://www.plugpagamentos.com/',
+    pixFilledProgressBarColor: '#344383',
+    pixEmptyProgressBarColor: '#D8DFF0',
+  };
+
+  handlePaymentSuccess(data: PlugCheckoutTransactionSuccessEvent) {
     console.log(data);
   }
 
-  handlePaymentFailed(error: PlugCheckoutOneShotError) {
+  handlePaymentFailed(error: PlugCheckoutTransactionErrorEvent) {
     console.log(error);
   }
 }
