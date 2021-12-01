@@ -1270,18 +1270,18 @@
     node-gyp "^7.1.0"
     read-package-json-fast "^2.0.1"
 
-"@plug-checkout/angular@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@plug-checkout/angular/-/angular-1.0.3.tgz#22f32f019ecaa3de1a68d1b4bd951a60ce6c04b7"
-  integrity sha512-ozeMq3SOsSE7H2n9X5MUR0aH+92u7CCnPIva0WjR36DEuxsLRoQCNznnG8tkU6QF5ELXplmC3i21fmcymmTPUw==
+"@plug-checkout/angular@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@plug-checkout/angular/-/angular-1.0.4.tgz#4e60508e3432da2a496bddfcaea7861b0d1df727"
+  integrity sha512-pmADDUMd8ZPQTe7SaWjAcye2Qo7JDsJkQcBYSIBliS+kKL76O+gICQzhxIhVGcevUrxB1wqc7ETCShyEPFwqug==
   dependencies:
     "@plug-checkout/core" "*"
     tslib "^1.9.3"
 
 "@plug-checkout/core@*":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@plug-checkout/core/-/core-1.0.3.tgz#477a3d433304400e228aef46684932ab7080cae5"
-  integrity sha512-sxl5t/k9biGuX+1As/9b8LMIpmOxa3tY3B3NXkNtYUTdLwnJsC8gcCK+63ahIOK1nOguR+xKoO+4yHgxwaPn3g==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@plug-checkout/core/-/core-1.0.4.tgz#856732d7416ed911d0f395d2a9eb416c67c514df"
+  integrity sha512-pgpQFZj2RlgKSU+Q1t2RhvMLJleP1op53CHd0dMZkgEb0kil/OiuSUqzcC1DWCZ1fwEKbZIUpUOWIsCC4GhupQ==
   dependencies:
     axios "^0.21.1"
     brazilian-values "^0.10.1"
@@ -4889,7 +4889,6 @@ minipass-fetch@^1.3.0, minipass-fetch@^1.3.2:
   resolved "https://registry.yarnpkg.com/minipass-fetch/-/minipass-fetch-1.3.3.tgz#34c7cea038c817a8658461bf35174551dce17a0a"
   integrity sha512-akCrLDWfbdAWkMLBxJEeWTdNsjML+dt5YgOI4gJ53vuO0vrmYQkUPxa6j6V65s9CcePIr2SSWqjT2EcrNseryQ==
   dependencies:
-    encoding "^0.1.12"
     minipass "^3.1.0"
     minipass-sized "^1.0.3"
     minizlib "^2.0.0"
