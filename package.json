@@ -1,5 +1,5 @@
 {
-  "name": "demo-plug-checkout",
+  "name": "demo-malga-checkout",
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
@@ -18,7 +18,7 @@
     "@angular/platform-browser": "~12.0.4",
     "@angular/platform-browser-dynamic": "~12.0.4",
     "@angular/router": "~12.0.4",
-    "@plug-checkout/angular": "latest",
+    "@malga-checkout/angular": "latest",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"

@@ -1189,6 +1189,28 @@
     merge-source-map "^1.1.0"
     schema-utils "^2.7.0"
 
+"@malga-checkout/angular@latest":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@malga-checkout/angular/-/angular-1.7.0.tgz#170d0f8f09fa411c89efad259f073d57e29cb319"
+  integrity sha512-KnCdWbAlCHLr5M9rOIdO7sua0NcyKoU5J5Qjcbo3p3YjTPkAdEQqfEtKUtxedOus6zetEtgAM7Pt5Zn286QXYA==
+  dependencies:
+    "@malga-checkout/core" "1.7.0"
+    tslib "^1.9.3"
+
+"@malga-checkout/core@1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@malga-checkout/core/-/core-1.7.0.tgz#b22afbd999f5bca75ea13723b54e1fe17ae88200"
+  integrity sha512-HtXx40+nmOf7BkxHY3QHkyAfzVNwf+RHehOI00fhB1yz4MdToKBGgTCqUYhOS2CpcgafU/zVKDiSlVbMgXEzYA==
+  dependencies:
+    "@stencil/store" "^1.5.0"
+    axios "^0.21.1"
+    brazilian-values "^0.10.1"
+    inputmask "^5.0.6"
+    matercolors "^2.3.0"
+    payment "2.3.0"
+    uuid "^8.3.2"
+    yup "^0.32.9"
+
 "@ngtools/webpack@12.0.5":
   version "12.0.5"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-12.0.5.tgz#3d858c1df3a4f5a13450fb0cffe0d5db8e61d0e1"
@@ -1270,25 +1292,6 @@
     node-gyp "^7.1.0"
     read-package-json-fast "^2.0.1"
 
-"@plug-checkout/angular@latest":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@plug-checkout/angular/-/angular-1.0.4.tgz#4e60508e3432da2a496bddfcaea7861b0d1df727"
-  integrity sha512-pmADDUMd8ZPQTe7SaWjAcye2Qo7JDsJkQcBYSIBliS+kKL76O+gICQzhxIhVGcevUrxB1wqc7ETCShyEPFwqug==
-  dependencies:
-    "@plug-checkout/core" "*"
-    tslib "^1.9.3"
-
-"@plug-checkout/core@*":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@plug-checkout/core/-/core-1.0.4.tgz#856732d7416ed911d0f395d2a9eb416c67c514df"
-  integrity sha512-pgpQFZj2RlgKSU+Q1t2RhvMLJleP1op53CHd0dMZkgEb0kil/OiuSUqzcC1DWCZ1fwEKbZIUpUOWIsCC4GhupQ==
-  dependencies:
-    axios "^0.21.1"
-    brazilian-values "^0.10.1"
-    inputmask "^5.0.6"
-    payment "2.3.0"
-    yup "^0.32.9"
-
 "@schematics/angular@12.0.5":
   version "12.0.5"
   resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-12.0.5.tgz#a5d30c7420dca31306adab62faed1083c28536b5"
@@ -1297,6 +1300,11 @@
     "@angular-devkit/core" "12.0.5"
     "@angular-devkit/schematics" "12.0.5"
     jsonc-parser "3.0.0"
+
+"@stencil/store@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@stencil/store/-/store-1.5.0.tgz#5c4e14ed078771bb8ed635867cfa8c3452f15ac4"
+  integrity sha512-fe5fCF6dgVlDM1iLRkkJUyUh0Tfx305asVGgMAJjIs7Q+x/b1pGgTLROm9Ibr53PZuFwr5Kg+4h9p4FLbYqHgA==
 
 "@tootallnate/once@1":
   version "1.1.2"
@@ -4732,6 +4740,11 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
+matercolors@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/matercolors/-/matercolors-2.3.0.tgz#f90055d99303f11dad0c6b15f0574f9d251ed5b6"
+  integrity sha512-IqwCB/uao4mI/ZnySGxN5WVfuXj4+1k/IS8u+KvH1nrDEb8XkdZWR8sl9mZuh17GSVfGu0AuGAWYpWFZKGBF0A==
+
 mdn-data@2.0.14:
   version "2.0.14"
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.0.14.tgz#7113fc4281917d63ce29b43446f701e68c25ba50"
@@ -7549,7 +7562,7 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@8.3.2:
+uuid@8.3.2, uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==

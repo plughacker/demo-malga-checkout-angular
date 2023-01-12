@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 import {
-  PlugCheckoutTransactionSuccessEvent,
-  PlugCheckoutTransactionErrorEvent,
+  MalgaCheckoutTransactionSuccessEvent,
+  MalgaCheckoutTransactionErrorEvent,
 } from './app.types';
 
 @Component({
@@ -38,7 +38,7 @@ export class AppComponent {
   };
 
   transactionConfig = {
-    statementDescriptor: '#1 Demonstration Plug Checkout',
+    statementDescriptor: '#1 Demonstration Malga Checkout',
     amount: 100,
     description: '',
     orderId: '',
@@ -52,16 +52,14 @@ export class AppComponent {
     actionButtonLabel: 'Continuar',
     errorActionButtonLabel: 'Tentar novamente',
     successActionButtonLabel: 'Continuar',
-    successRedirectUrl: 'https://www.plugpagamentos.com/',
-    pixFilledProgressBarColor: '#344383',
-    pixEmptyProgressBarColor: '#D8DFF0',
+    successRedirectUrl: 'https://www.malga.io/',
   };
 
-  handlePaymentSuccess(data: PlugCheckoutTransactionSuccessEvent) {
+  handlePaymentSuccess(data: MalgaCheckoutTransactionSuccessEvent) {
     console.log(data);
   }
 
-  handlePaymentFailed(error: PlugCheckoutTransactionErrorEvent) {
+  handlePaymentFailed(error: MalgaCheckoutTransactionErrorEvent) {
     console.log(error);
   }
 }
